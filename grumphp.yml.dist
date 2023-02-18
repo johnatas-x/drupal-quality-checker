@@ -5,6 +5,8 @@ grumphp:
   ascii:
     failed: vendor/johnatas-x/drupal-quality-checker/resources/grumpy.txt
     succeeded: vendor/johnatas-x/drupal-quality-checker/resources/happy.txt
+  extensions:
+    - GrumphpDrupalCheck\ExtensionLoader
   tasks:
     phplint: ~
     yamllint: ~
@@ -49,3 +51,10 @@ grumphp:
         - /^web\/modules\/custom\/(.*)/
       ruleset: ['phpmd.xml.dist']
       triggered_by: ['php']
+    drupalcheck:
+      drupal_root: ~
+      memory_limit: ~
+      deprecations: true
+      analysis: false
+      php8: true
+      exclude_dir: []
