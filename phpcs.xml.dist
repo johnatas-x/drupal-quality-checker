@@ -9,6 +9,8 @@
   <!-- PHPCS Arguments -->
   <arg name="extensions" value="inc,info.yml,install,module,php,profile,test,theme" />
   <arg name="colors" />
+  <!-- Append arg -s to phpcs to display the code of failed sniffs -->
+  <arg value="s"/>
 
   <!--Allow global variables in settings file.-->
   <rule ref="DrupalPractice.CodeAnalysis.VariableAnalysis.UndefinedVariable">
@@ -145,7 +147,6 @@
   <rule ref="Drupal.WhiteSpace.ObjectOperatorSpacing"/>
   <rule ref="Drupal.WhiteSpace.OpenBracketSpacing"/>
   <rule ref="Drupal.WhiteSpace.OpenTagNewline"/>
-  <rule ref="Drupal.WhiteSpace.OperatorSpacing"/>
   <rule ref="Drupal.WhiteSpace.ScopeClosingBrace"/>
   <rule ref="Drupal.WhiteSpace.ScopeIndent"/>
 
@@ -155,6 +156,7 @@
   <!-- Generic sniffs -->
   <rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
   <rule ref="Generic.CodeAnalysis.EmptyPHPStatement" />
+  <rule ref="Generic.Classes.DuplicateClassName"/>
   <rule ref="Generic.Files.ByteOrderMark"/>
   <rule ref="Generic.Files.LineEndings"/>
   <rule ref="Generic.Formatting.SpaceAfterCast"/>
@@ -339,4 +341,12 @@
   <!-- Zend sniffs -->
   <rule ref="Zend.Files.ClosingTag"/>
 
+  <!-- PHPCompatibility -->
+  <rule ref="PHPCompatibility">
+    <config name="testVersion" value="8.2"/>
+  </rule>
+  <rule ref="PHPCompatibility.Keywords.ForbiddenNamesAsDeclared.resourceFound">
+    <!-- Ignore these plugins since the core's rest module does not either -->
+    <exclude-pattern>*/Plugin/rest/resource/*</exclude-pattern>
+  </rule>
 </ruleset>

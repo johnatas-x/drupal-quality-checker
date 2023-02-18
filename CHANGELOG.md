@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.4.1 / 2023-02-18
+* Improve PHPMD & PHPCS rules for Drupal
+
 ## 1.4.0 / 2023-02-18
 
 * Fork project
