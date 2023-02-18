@@ -14,6 +14,7 @@
         "dealerdirect/phpcodesniffer-composer-installer": "*",
         "drupal/coder": "8.3.*",
         "friendsoftwig/twigcs": "6.*",
+        "johnatas-x/grumphp-drupal-check": "1.0.*",
         "php-parallel-lint/php-parallel-lint": "1.3.*",
         "phpcompatibility/php-compatibility": "9.3.*",
         "phpmd/phpmd": "2.13.*",

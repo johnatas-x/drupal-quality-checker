@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.5.0 / 2023-02-18
+* Add [johnatas-x/grumphp-drupal-check](https://packagist.org/packages/johnatas-x/grumphp-drupal-check) to use [drupal-check](https://github.com/mglaman/drupal-check) with [grumphp](https://github.com/phpro/grumphp)
+
 ## 1.4.1 / 2023-02-18
 * Improve PHPMD & PHPCS rules for Drupal
 
