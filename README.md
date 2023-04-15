@@ -130,6 +130,16 @@ grumphp:
       standard: ['phpcs.xml']
 ```
 
+### Customise phpstan parameters
+
+Copy the ruleset to the project root first
+
+```bash
+cp vendor/johnatas-x/drupal-quality-checker/phpstan.neon.dist phpstan.neon
+```
+
+Edit it as per your needs and commit.
+
 ## More about scaffolding
 
 As described before, this package uses [`drupal/core-composer-scaffold`](https://github.com/drupal/core-composer-scaffold) plugin to scaffold a few files to the project root. This is not required but there is a good chance you are already using it if you're building a Drupal site.
