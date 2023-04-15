@@ -15,10 +15,14 @@
         "drupal/coder": "8.3.*",
         "friendsoftwig/twigcs": "6.*",
         "johnatas-x/grumphp-drupal-check": "1.0.*",
+        "mglaman/phpstan-drupal": "^1.1",
         "php-parallel-lint/php-parallel-lint": "1.3.*",
         "phpcompatibility/php-compatibility": "9.3.*",
         "phpmd/phpmd": "2.13.*",
         "phpro/grumphp-shim": "1.15.*",
+        "phpstan/extension-installer": "^1.2",
+        "phpstan/phpstan": "^1.10",
+        "phpstan/phpstan-deprecation-rules": "^1.1",
         "sebastian/phpcpd": "6.0.3"
     },
     "require-dev": {
@@ -29,7 +33,12 @@
         "source": "https://github.com/johnatas-x/drupal-quality-checker"
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "phpro/grumphp-shim": true,
+            "phpstan/extension-installer": true
+        }
     },
     "extra": {
         "drupal-scaffold": {
@@ -40,7 +49,8 @@
                     "overwrite": false
                 },
                 "[project-root]/phpcs.xml.dist": "phpcs.xml.dist",
-                "[project-root]/phpmd.xml.dist": "phpmd.xml.dist"
+                "[project-root]/phpmd.xml.dist": "phpmd.xml.dist",
+                "[project-root]/phpstan.neon.dist": "phpstan.neon.dist"
             }
         },
         "branch-alias": {

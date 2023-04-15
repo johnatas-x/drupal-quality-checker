@@ -2,6 +2,10 @@ parameters:
   git_dir: .
   bin_dir: vendor/bin
 grumphp:
+  ignore_unstaged_changes: true
+  parallel:
+    enabled: false
+  process_timeout: 180
   ascii:
     failed: vendor/johnatas-x/drupal-quality-checker/resources/grumpy.txt
     succeeded: vendor/johnatas-x/drupal-quality-checker/resources/happy.txt
@@ -51,6 +55,15 @@ grumphp:
         - /^web\/modules\/custom\/(.*)/
       ruleset: ['phpmd.xml.dist']
       triggered_by: ['php']
+    phpstan:
+      autoload_file: ~
+      configuration: ~
+      level: null
+      force_patterns: []
+      ignore_patterns: []
+      triggered_by: ['php']
+      memory_limit: "-1"
+      use_grumphp_paths: true
     drupalcheck:
       drupal_root: ~
       memory_limit: ~

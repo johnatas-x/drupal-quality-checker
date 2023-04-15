@@ -1,0 +1,15 @@
+# Configuration file for PHPStan static code checking, see https://phpstan.org .
+
+parameters:
+  level: 1
+  paths:
+    - web/modules/custom
+  ignoreErrors:
+    # new static() is a best practice in Drupal, so we cannot fix that.
+    - "#^Unsafe usage of new static#"
+
+    # Ignore common errors for now.
+    - "#Drupal calls should be avoided in classes, use dependency injection instead#"
+    - "#^Plugin definitions cannot be altered.#"
+    - "#^Missing cache backend declaration for performance.#"
+    - "#^Class .* extends @internal class#"
