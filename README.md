@@ -1,3 +1,11 @@
+> :warning::warning::warning::warning::warning:
+> 
+> **This project is deprecated and obsolete.**
+> 
+> The baseline is too soft, prefer the use of this tool: [Angry bearded](https://github.com/johnatas-x/angry-bearded) by adapting the rules to your needs.
+> 
+> This project is based on [axelerant](https://packagist.org/packages/axelerant/drupal-quality-checker) and [vijaycs85](https://packagist.org/packages/vijaycs85/drupal-quality-checker) and the last version
+
 # Package for Drupal Code Quality presets
 
 This has been customised from [axelerant/drupal-quality-checker](https://packagist.org/packages/axelerant/drupal-quality-checker) which has been customised from [vijaycs85/drupal-quality-checker](https://packagist.org/packages/vijaycs85/drupal-quality-checker).
