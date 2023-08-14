@@ -1,5 +1,14 @@
 # Changelog
 
+## 2.0.0 / 2023-08-14
+* Last update of this repo for GrumPHP 2.0 compatibility
+
+## 1.6.1 / 2023-02-18
+* Upgrade grumphp-drupal-check for grumphp-shim 1.15.0
+
+## 1.6.0 / 2023-02-18
+* Add Phpstan
+
 ## 1.5.0 / 2023-02-18
 * Add [johnatas-x/grumphp-drupal-check](https://packagist.org/packages/johnatas-x/grumphp-drupal-check) to use [drupal-check](https://github.com/mglaman/drupal-check) with [grumphp](https://github.com/phpro/grumphp)
 
